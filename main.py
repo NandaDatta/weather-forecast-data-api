@@ -63,9 +63,7 @@ if place:
 
                 # iterating columns, image_path and for date to display
                 for col, image_path, date_str in zip(cols, image_paths[i:i + max_images_per_row], dates[i:i + max_images_per_row]):
-                    print(image_paths)
                     with col:
-                        print(image_path)
                         date_obj = datetime.strptime(date_str, "%Y-%m-%d %H:%M:%S")
                         formatted_date = date_obj.strftime("%a, %b, %d")
                         st.image(image_path, width=150)
