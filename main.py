@@ -4,7 +4,7 @@ from backend import get_data
 from datetime import datetime
 
 # Setting the title
-st.title("Weather Forecast fot the Next Day's")
+st.title("Weather Forecast for the Next Day's")
 
 # storing the user input in a variable
 place = st.text_input('Place: ')
